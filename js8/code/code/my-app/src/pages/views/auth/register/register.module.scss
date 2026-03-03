@@ -1,0 +1,65 @@
+@use "../../../../styles/colors.scss" as *;
+
+.register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: map-get($map: $schema, $key: color-secondary);
+}
+
+.card {
+  background: #ffffff;
+  padding: 2rem;
+  width: 320px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f7f7f7;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #3498db;
+  background: #fff;
+}
+
+.button {
+  width: 100%;
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.button:hover {
+  background-color: #2980b9;
+}
+
+.link {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 13px;
+  color: #3498db;
+  cursor: pointer;
+}
